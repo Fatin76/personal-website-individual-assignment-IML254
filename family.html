@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatin Najiha - Personal Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  background-color: #faf5ff;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #1d2951;
+  font-family: 'Segoe UI Black';
+  display: flex; /* Ensure navbar items are in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  margin-right: auto; /* Push the logo to the far left */
+  padding: 0px; /* Adjust as needed */
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #e5aa70;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8ff;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  text-align: center; /* Center-align the contents */
+  padding: 20px;
+}
+
+.container img {
+  width: 900px;
+  height: 700px;
+  border-radius: 8px;
+  margin-bottom: 5px; /* Space between the image and the text */
+  border: 5px solid #333; /* Add a border */
+}
+
+.footer {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff0f5;
+  text-align: center;
+  font-family: 'Segoe UI Black';
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Wrap boxes if the screen size is small */
+  padding: 0 20px; /* Add padding for better spacing on smaller screens */
+}
+
+.box {
+  max-width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box img {
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between the image and the text */
+  border: 1px solid #333; /* Add a border */
+}
+
+.box div {
+  text-align: center;
+}
+
+.box h2 {
+  font-family: Arial;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.box p {
+  margin: 5px 0;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: navy;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+
+<body style="background-color:#faf5ff;">
+
+<div class="navbar">
+  <div class="logo">
+    <b style="font-family: Broadway; font-size: 25px; color: #f5f5f5;">
+      <a href="index.html">Fatin.Najiha</a>
+    </b>
+  </div>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <div class="dropbtn" onclick="myFunction()">About Me
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="profile.html">Profile</a>
+      <a href="education.html">Education</a>
+    </div>
+  </div> 
+  <a href="family.html">Family</a>
+  <a href="interest.html">Interest</a> 
+  <a href="hometown.html">Hometown</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<h1 style="text-align:center; font-family:Segoe UI Black; color:black ">Family</h1>
+<div class="container">
+  <img src="family1.jpg" alt="family">
+</div>
+<h2 style="text-align: center; font-family:Arial; font-size: 15px;">This is my lovely family. It consists of five members!</h2>
+
+<div class="box-container">
+  <div class="box">
+    <img src="baba.jpg" alt="myfather">
+    <div>
+      <h2>This is my coolest father!</h2>
+      <p><strong>Name:</strong> Muhammad Nazri bin Mat Amin</p>
+      <p><strong>Age:</strong> 45 years old</p>
+      <p><strong>Born:</strong> 24 May 1979</p>
+      <p><strong>Work:</strong> Freelancer Engineer</p>
+    </div>
+  </div>
+  <div class="box">
+    <img src="mama.jpg" alt="my mother">
+    <div>
+      <h2>This is my lovely mother!</h2>
+      <p><strong>Name:</strong> Foziah binti Omar</p>
+      <p><strong>Age:</strong> 45 years old</p>
+      <p><strong>Born:</strong> 19 July 1979</p>
+      <p><strong>Work:</strong> Clerk</p>
+    </div>
+  </div>
+  <div class="box">
+    <img src="fatin1.jpg" alt="myself">
+    <div>
+      <h2>Me</h2>
+      <p><strong>Name:</strong> Fatin Najiha binti Muhammad Nazri</p>
+      <p><strong>Age:</strong> 20 years old</p>
+      <p><strong>Born:</strong> 7 June 2004</p>
+      <p><strong>Child:</strong> Eldest daughter</p>
+    </div>
+  </div>
+  <div class="box">
+    <img src="adik.jpg" alt="my brother">
+    <div>
+      <h2>This is my brother!</h2>
+      <p><strong>Name:</strong> Muhammad Faiz Nabil bin Muhammad Nazri</p>
+      <p><strong>Age:</strong> 17 years old</p>
+      <p><strong>Born:</strong> 6 February 2007</p>
+      <p><strong>Child:</strong> Eldest son</p>
+    </div>
+  </div>
+  <div class="box">
+    <img src="naufal.jpg" alt="my youngest brother">
+    <div>
+      <h2>This is my youngest brother!</h2>
+      <p><strong>Name:</strong> Muhammad Faris Naufal bin Muhammad Nazri</p>
+      <p><strong>Age:</strong> 9 years old</p>
+      <p><strong>Born:</strong> 28 April 2021</p>
+      <p><strong>Child:</strong> Youngest son</p>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <img src="family2.jpg" alt="family">
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!--footer-->
+<footer class="footer">
+  <h5>Copyright &copy; 2024 - Fatin Najiha. All Rights Reserved.<p>My Contact:<br> 018-409 9870<br>2022624152@student.uitm.edu.my</h5>
+</footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

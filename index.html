@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatin Najiha - Personal Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {
+  background-color: #faf5ff;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #1d2951;
+  font-family: 'Segoe UI Black';
+  display: flex; /* Ensure navbar items are in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  margin-right: auto; /* Push the logo to the far left */
+  padding: 0px; /* Adjust as needed */
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+   float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #e5aa70;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8ff;
+}
+
+.show {
+  display: block;
+}
+
+.banner {
+  height: 100vh;
+  border: 1px solid;
+  background-image: url('banner.png');
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(25, 25, 112, 0.5);
+}
+
+.banner h2 {
+  color: #fdf5e6;
+  z-index: 1;
+  padding: 20px 25px;
+  border: 5px ridge #fdf5e6;
+  font-family: 'Segoe UI Black';
+}
+
+section {
+  padding: 50px 0;
+}
+
+footer h5 {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff0f5;
+  text-align: center;
+  font-family: 'Segoe UI Black';
+}
+</style>
+</head>
+
+<body style="background-color: white;">
+
+<div class="navbar">
+  <div class="logo">
+    <b style="font-family: Broadway; font-size: 25px; color: #f5f5f5;">
+      <a href="index.html">Fatin.Najiha</a>
+    </b>
+  </div>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <div class="dropbtn" onclick="myFunction()">About Me
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="profile.html">Profile</a>
+      <a href="education.html">Education</a>
+    </div>
+  </div> 
+  <a href="family.html">Family</a>
+  <a href="interest.html">Interest</a> 
+  <a href="hometown.html">Hometown</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<!--banner-->
+<section class="banner">
+  <h2>WELCOME TO MY PERSONAL WEBSITE</h2>
+</section>
+<!--footer-->
+<footer>
+    <h5>Copyright &copy; 2024 - Fatin Najiha. All Rights Reserved.
+    <p>My Contact:<br> 018-409 9870<br>2022624152@student.uitm.edu.my</h5>
+</footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
+
+
+

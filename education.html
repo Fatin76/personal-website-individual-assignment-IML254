@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatin Najiha - Personal Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 2;
+  margin: 2;
+  box-sizing: border-box;
+  background-color: #faf5ff; 
+}
+.navbar {
+  overflow: hidden;
+  background-color: #1d2951;
+  font-family: 'Segoe UI Black';
+  display: flex; /* Ensure navbar items are in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  margin-right: auto; /* Push the logo to the far left */
+  padding: 0px; /* Adjust as needed */
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #e5aa70;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8ff;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center; /* Center-align the contents */
+}
+
+.container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-bottom: 5px; /* Space between the image and the text */
+}
+
+.container h2 {
+  font-family: 'Segoe UI Black';
+  font-size: 24px;
+  color: #483d8b;
+}
+
+.container small {
+  color: black;
+}
+
+.container p {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+td, th {
+  border: 1px solid;
+  text-align: center;
+  padding: 6px;
+}
+
+th {
+  background-color: #1d2951;
+  color: white;
+}
+
+footer h5 {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff0f5;
+  text-align: center;
+  font-family: 'Segoe UI Black';
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="logo">
+    <b style="font-family: Broadway; font-size: 25px; color: #f5f5f5;">
+      <a href="index.html">Fatin.Najiha</a>
+    </b>
+  </div>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <div class="dropbtn" onclick="myFunction()">About Me
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="profile.html">Profile</a>
+      <a href="education.html">Education</a>
+    </div>
+  </div> 
+  <a href="family.html">Family</a>
+  <a href="interest.html">Interest</a> 
+  <a href="hometown.html">Hometown</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<h1 style="text-align:center; font-family:Segoe UI Black;">Education</h1>
+<div class="container">
+  <img src="skti.jpg" alt="Sekolah Kebangsaan Taman Inderawasih">
+  <div>
+    <h2>Sekolah Kebangsaan Taman Inderawasih</h2>
+    <small>2010-2016</small>
+    <p> UPSR:<br>3A 1B 2C</p>
+  </div>
+</div>
+<div class="container">
+  <img src="smkti.jpg" alt="Sekolah Menengah Kebangsaan Taman Inderawasih">
+  <div>
+    <h2>Sekolah Menengah Kebangsaan Taman Inderawasih</h2>
+    <small>2017-2018</small>
+  </div>
+</div>
+<div class="container">
+  <img src="smkdk.jpg" alt="Sekolah Menengah Kebangsaan Dato'Kailan">
+  <div>
+    <h2>Sekolah Menengah Kebangsaan Dato' Kailan</h2>
+    <small>2019-2022</small>
+    <p> PT3:<br>7A 1B 2C</p>
+    <p> SPM:<br>5A 1B 2C 2D</p>
+  </div>
+</div>
+<div class="container">
+  <img src="uitm.png" alt="UITM">
+  <div>
+    <h2>Universiti Teknologi Mara(UiTM),<br>Campus Sungai Petani, Kedah</h2>
+    <small>2022-present</small>
+    <p> Fourth semester in Diploma Library Informatics</p>
+    <p> CGPA:3.52</p>
+  </div>
+</div>
+
+<h1 style="text-align:center;font-family:Segoe UI Black;">Timetable KCDIM144 4A (March 2024-August 2024)</h1>
+<table>
+  <tr>
+    <th colspan="11">Time Table</th>
+  </tr>
+  <tr>
+    <th>Day / Time</th>
+    <th>08:00</th>
+    <th>09:00</th>
+    <th>10:00</th>
+    <th>11:00</th>
+    <th>12:00</th>
+    <th>13:00</th>
+    <th>14:00</th>
+    <th>15:00</th>
+    <th>16:00</th>
+    <th>17:00</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td colspan="3">IML256</td>
+    <td colspan="3"></td>
+    <td colspan="3">IML254</td>
+    <td colspan="1">IML257</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td colspan="3">IML255</td>
+    <td colspan="1"></td>
+    <td colspan="3">IML256</td>
+    <td colspan="1"></td>
+    <td colspan="1">IML257</td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td colspan="3">IML254</td>
+    <td colspan="3"></td>
+    <td colspan="3">IMC258</td>
+    <td colspan="1"></td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td colspan="3">IML257</td>
+    <td colspan="1">IMC258</td>
+    <td colspan="6"></td>
+  </tr>
+</table>
+
+<!--footer-->
+<footer>
+  <h5>Copyright &copy; 2024 - Fatin Najiha. All Rights Reserved.<p>My Contact:<br> 018-409 9870<br>2022624152@student.uitm.edu.my</h5>
+</footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatin Najiha - Personal Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 2;
+  margin: 2;
+  box-sizing: border-box;
+  background-color: #faf5ff;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #1d2951;
+  font-family: 'Segoe UI Black';
+  display: flex; /* Ensure navbar items are in a row */
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  margin-right: auto; /* Push the logo to the far left */
+  padding: 0px; /* Adjust as needed */
+}
+
+.navbar a {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: #e5aa70;
+  text-transform: uppercase;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8ff;
+}
+
+.show {
+  display: block;
+}
+
+.section {
+  background-color: var(--extra-light);
+  padding: 50px 0;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.image {
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+}
+
+.image img {
+  width: 550px; 
+  height: 600px;
+  border-radius: 70%; 
+  border-style: ridge;
+  border-width: 10%; 
+  border-color: navy;
+}
+
+footer h5 {
+  padding: 30px 0;
+  background-color: #333;
+  color: #fff0f5;
+  text-align: center;
+  font-family: 'Segoe UI Black';
+}
+</style>
+</head>
+
+<body style="background-color: #faf5ff;">
+
+<div class="navbar">
+  <div class="logo">
+    <b style="font-family: Broadway; font-size: 25px; color: #f5f5f5;">
+      <a href="index.html">Fatin.Najiha</a>
+    </b>
+  </div>
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <div class="dropbtn" onclick="myFunction()">About Me
+      <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="profile.html">Profile</a>
+      <a href="education.html">Education</a>
+    </div>
+  </div> 
+  <a href="family.html">Family</a>
+  <a href="interest.html">Interest</a> 
+  <a href="hometown.html">Hometown</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+<section class="section">
+<h1 style="text-align:center; font-family:Segoe UI Black; font-size:30px;">Profile</h1>
+  <div class="section__container">
+    <div class="content">
+      <p class="subtitle">ASSALAMUALAIKUM & HELLO</p>
+      <h1 class="title">I am <span>Fatin Najiha binti Muhammad Nazri<br>a </span> Diploma Student of Informatic Library</h1>
+      <p class="description">Welcome to my website! I'm Fatin Najiha. <br>My student is 2022624152<br>Born on 7th June 2004<br>Officially 20 years old.<br>Live in Bertam Perdana, Kepala Batas</p>
+    </div>
+    <div class="image">
+      <img src="fatin2.jpg" alt="profile">
+    </div>
+  </div>
+</section>
+
+<!--footer-->
+<footer>
+    <h5>Copyright &copy; 2024 - Fatin Najiha. All Rights Reserved.<p>My Contact:<br> 018-409 9870<br>2022624152@student.uitm.edu.my</h5>
+</footer>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
+
+
+
